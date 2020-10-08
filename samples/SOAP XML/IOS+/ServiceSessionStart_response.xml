@@ -2,7 +2,7 @@
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <ServiceSessionStart xmlns="http://webservices.iress.com.au/v4/">
-      <Input xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
         <Header>
           <ServiceSessionKey>81F43649-1E9A-4ADF-94BD-F257D078C987@IDS-TEST</ServiceSessionKey>
           <RequestID></RequestID>

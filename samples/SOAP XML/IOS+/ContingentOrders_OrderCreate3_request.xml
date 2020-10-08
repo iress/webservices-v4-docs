@@ -2,7 +2,7 @@
     <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
         <OrderCreate3 xmlns="http://webservices.iress.com.au/v4/">
-            <Input xmlns="http://webservices.iress.com.au/v4/">
+            <Input>
                 <Header>
                     <ServiceSessionKey>344E92FB-E4EA-485B-B9FC-142B93721D78@IDS-TEST</ServiceSessionKey>
                     <RequestID>46863D3A-F577-4650-8C6E-BB01291210DF</RequestID>
