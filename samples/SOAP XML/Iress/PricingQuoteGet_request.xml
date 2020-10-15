@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <PricingQuoteGet xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <SessionKey>AC4CE1D3-B281-4824-A6EE-8879A5615720-097B4F5D-00C8-000A-0001-0089@IDS-TEST</SessionKey>
+          <RequestID>D6380B2A-EBB0-4599-8193-43AEFD02EE31</RequestID>
+          <Updates>false</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>1000</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark />
+          <PagingDirection>0</PagingDirection>
+          <InputLocalizationType>0</InputLocalizationType>
+          <OutputLocalizationType>0</OutputLocalizationType>
+        </Header>
+        <Parameters>
+          <SecurityCodeArray>
+            <SecurityCode>IRE</SecurityCode>
+          </SecurityCodeArray>
+          <ExchangeArray>
+            <Exchange>ASX</Exchange>
+          </ExchangeArray>
+          <DataSourceArray xsi:nil="true" />
+          <UserWatchlistProvided xsi:nil="true" />
+          <SecurityTextArray xsi:nil="true" />
+        </Parameters>
+      </Input>
+    </PricingQuoteGet>
+  </soap:Body>
+</soap:Envelope>
