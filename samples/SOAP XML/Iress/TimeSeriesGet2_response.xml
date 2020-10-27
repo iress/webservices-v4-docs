@@ -8,7 +8,7 @@
         <Input>
           <Header>
             <SessionKey>1861F237-16E9-41BB-A77D-DED307CC6506-097B3789-00C8-000A-0001-0089@IDS-TEST</SessionKey>
-            <RequestID>DCB476EE-5BD4-42AB-A416-F7C2D5301FCC</RequestID>
+            <RequestID>0D8A55F4-D507-4598-88F9-0DF144C296DA</RequestID>
             <Updates>false</Updates>
             <Timeout>25</Timeout>
             <PageSize>1000</PageSize>
@@ -30,7 +30,7 @@
         </Input>
         <Result>
           <Header>
-            <RequestID>DCB476EE-5BD4-42AB-A416-F7C2D5301FCC</RequestID>
+            <RequestID>0D8A55F4-D507-4598-88F9-0DF144C296DA</RequestID>
             <StatusCode>2</StatusCode>
             <WebServiceTimeStamp>2020-10-15T11:48:36</WebServiceTimeStamp>
             <PagingBookmark></PagingBookmark>
