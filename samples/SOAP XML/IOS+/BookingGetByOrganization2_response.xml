@@ -1,0 +1,153 @@
+28-Oct 00:09:58.32 (TID= 6716) SOAP: RESPONSE - 
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <BookingGetByOrganization2Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>BABC42E7-9756-4E31-8EBE-C2F2915F9EED@IDS-TEST</ServiceSessionKey>
+            <RequestID>8A2452BF-18B3-44F0-B7FA-D649E7BC5F90</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <OrganizationArray>
+              <Organization>IRESS</Organization>
+            </OrganizationArray>
+            <IncludeDeleted>false</IncludeDeleted>
+            <FromAsAtDate xsi:nil="true"/>
+            <ToAsAtDate xsi:nil="true"/>
+            <FromTradeDate>2020-10-26</FromTradeDate>
+            <ToTradeDate>2020-10-28</ToTradeDate>
+            <FromCreateDateTime xsi:nil="true"/>
+            <ToCreateDateTime xsi:nil="true"/>
+            <FromUpdateDateTime xsi:nil="true"/>
+            <ToUpdateDateTime xsi:nil="true"/>
+            <GroupingTag xsi:nil="true"/>
+            <ExcludeMatched>false</ExcludeMatched>
+            <SecurityCode xsi:nil="true"/>
+            <Exchange xsi:nil="true"/>
+            <BuyOrSell xsi:nil="true"/>
+            <OrderNumberArray xsi:nil="true"/>
+            <BulkAllocationID xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>8A2452BF-18B3-44F0-B7FA-D649E7BC5F90</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-10-28T00:09:58</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <BookingNumber>67</BookingNumber>
+              <Organization>IRESS</Organization>
+              <ContractClass>Normal</ContractClass>
+              <BookingCode>TEST</BookingCode>
+              <BookingCodeName>TEST</BookingCodeName>
+              <BrokerCode xsi:nil="true" />
+              <BookingCodeNumber>33</BookingCodeNumber>
+              <SecurityCode>BHP</SecurityCode>
+              <Exchange>ASX</Exchange>
+              <BuyOrSell>B</BuyOrSell>
+              <AllocatedVolume>100</AllocatedVolume>
+              <AllocatedValue>5596</AllocatedValue>
+              <TargetVolume>100</TargetVolume>
+              <AveragePrice>5596</AveragePrice>
+              <InstitutionalStatus>Firm</InstitutionalStatus>
+              <BrokerStatus>(none)</BrokerStatus>
+              <CommissionType>0</CommissionType>
+              <Commission>0</Commission>
+              <ExternalID></ExternalID>
+              <SettlementCurrency>AUD</SettlementCurrency>
+              <SettlementFXRate>1</SettlementFXRate>
+              <Rounding>4</Rounding>
+              <Instructions></Instructions>
+              <PrincipalTrade>false</PrincipalTrade>
+              <ValueMultiplier>0.01</ValueMultiplier>
+              <OrderNoList xsi:nil="true" />
+              <DoneVolume xsi:nil="true" />
+              <SettlementDate>2020-10-29</SettlementDate>
+              <TradeDate>2020-10-27</TradeDate>
+              <AsAtDate>2020-10-27</AsAtDate>
+              <CreateDateTime>2020-10-27T00:48:31.780</CreateDateTime>
+              <UpdateDateTime>2020-10-27T01:07:21.267</UpdateDateTime>
+              <DeleteDateTime xsi:nil="true" />
+              <GroupingTag></GroupingTag>
+              <SoftCommission>0</SoftCommission>
+              <MatchStatus>0</MatchStatus>
+              <TrailerCodeOnMask>0</TrailerCodeOnMask>
+              <TrailerCodes></TrailerCodes>
+              <TradeSources></TradeSources>
+              <MiscFees>
+                <MiscFees>
+                  <Fee>
+                    <Set>1</Set>
+                    <FeeType>2</FeeType>
+                    <FeeBasis>2</FeeBasis>
+                    <Properties>0</Properties>
+                    <FeeAmount>10.0000</FeeAmount>
+                    <Currency>AUD</Currency>
+                    <Display>1</Display>
+                    <SWIFTQualifier/>
+                  </Fee>
+                </MiscFees>
+              </MiscFees>
+              <ExternalTradeReference></ExternalTradeReference>
+              <FIXAllocID></FIXAllocID>
+              <Destination></Destination>
+              <DestinationBookingNumber></DestinationBookingNumber>
+              <BookingStateNumber>2</BookingStateNumber>
+              <LastActionNumber>2</LastActionNumber>
+              <EventDescription>Booking modified</EventDescription>
+              <SideCode>1</SideCode>
+              <ClearingInstruction></ClearingInstruction>
+              <FreeOfPayment>false</FreeOfPayment>
+              <StockLending>false</StockLending>
+              <CrossingIndicator>false</CrossingIndicator>
+              <TradingBrokerFullNameAndAddress></TradingBrokerFullNameAndAddress>
+              <TradingBrokerABN></TradingBrokerABN>
+              <TradingBrokerClearingOrganization></TradingBrokerClearingOrganization>
+              <TradingBrokerPID></TradingBrokerPID>
+              <TradingBrokerBIC></TradingBrokerBIC>
+              <TradingBrokerInternalReference></TradingBrokerInternalReference>
+              <TradingBrokerAccountOrReference></TradingBrokerAccountOrReference>
+              <TradingBrokerComments></TradingBrokerComments>
+              <TradingBrokerSettlementTime>00:00:00.000</TradingBrokerSettlementTime>
+              <ClearingBrokerSameAsTradingBroker>false</ClearingBrokerSameAsTradingBroker>
+              <ClearingBrokerFullNameAndAddress></ClearingBrokerFullNameAndAddress>
+              <ClearingBrokerABN></ClearingBrokerABN>
+              <ClearingBrokerClearingOrganization></ClearingBrokerClearingOrganization>
+              <ClearingBrokerPID></ClearingBrokerPID>
+              <ClearingBrokerBIC></ClearingBrokerBIC>
+              <ClearingBrokerInternalReference></ClearingBrokerInternalReference>
+              <ClearingBrokerAccountOrReference></ClearingBrokerAccountOrReference>
+              <ClearingBrokerComments></ClearingBrokerComments>
+              <ClearingBrokerSettlementTime>00:00:00.000</ClearingBrokerSettlementTime>
+              <SubAllocID></SubAllocID>
+              <BulkAllocationID xsi:nil="true" />
+              <ExternalBulkAllocationID xsi:nil="true" />
+              <BulkAllocationCount xsi:nil="true" />
+              <AccruedInterest>0</AccruedInterest>
+              <CommissionRate>0</CommissionRate>
+              <AllocationPercent>0</AllocationPercent>
+              <AccountList xsi:nil="true" />
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </BookingGetByOrganization2Response>
+  </soap:Body>
+</soap:Envelope>
