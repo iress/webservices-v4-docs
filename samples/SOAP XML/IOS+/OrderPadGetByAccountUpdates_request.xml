@@ -2,10 +2,10 @@
   <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <OrderPadGetByAccountUpdates xmlns="http://webservices.iress.com.au/v4/">
-      <Input>
+      <Input xmlns="http://webservices.iress.com.au/v4/">
         <Header>
-          <ServiceSessionKey>A88F5342-1F01-410B-A084-6480D1770925@IDSA01</ServiceSessionKey>
-          <RequestID></RequestID>
+          <ServiceSessionKey>9B2EC77C-E74B-4D20-97F2-F326EF2FDAAC@IDS-TEST</ServiceSessionKey>
+          <RequestID>e93c0974-28c9-46e2-8a38-b58743be2f91</RequestID>
           <Updates>false</Updates>
           <Timeout>25</Timeout>
           <PageSize>1000</PageSize>
