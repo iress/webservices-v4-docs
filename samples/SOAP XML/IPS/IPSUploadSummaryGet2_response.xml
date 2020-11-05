@@ -1,0 +1,58 @@
+05-Nov 20:37:53.33 (TID=20440) SOAP: RESPONSE - 
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <IPSUploadSummaryGet2Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>4b0d1401-176e-4e15-b3dd-ead032a80ba8@IDSA01</ServiceSessionKey>
+            <RequestID>BAA6C3D2-9DC9-400E-A81B-3B6DF973E41A</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <UploadDateTime>2020-11-05T20:31:51.6978812+11:00</UploadDateTime>
+            <UploadID>33880</UploadID>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>BAA6C3D2-9DC9-400E-A81B-3B6DF973E41A</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-11-05T20:37:53</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <UploadID>33880</UploadID>
+              <UploadName>TEST</UploadName>
+              <FileType>Security List</FileType>
+              <FileLineCount>7</FileLineCount>
+              <UploadUser>AUTOTEST1@IRESS</UploadUser>
+              <UploadDateTime>2020-11-05T13:05:55.317</UploadDateTime>
+              <UploadStatus>Complete</UploadStatus>
+              <RunCount>1</RunCount>
+              <LastRunErrorCount>0</LastRunErrorCount>
+              <LastRunLineCount>2</LastRunLineCount>
+              <LastRunUser>AUTOTEST1@IRESS</LastRunUser>
+              <LastRunDateTime>2020-11-05T18:09:02.700</LastRunDateTime>
+              <LastRunDuration>00:00:00</LastRunDuration>
+              <LastRunUploadRunID>25399</LastRunUploadRunID>
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </IPSUploadSummaryGet2Response>
+  </soap:Body>
+</soap:Envelope>

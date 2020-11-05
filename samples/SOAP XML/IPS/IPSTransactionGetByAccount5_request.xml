@@ -1,0 +1,42 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <IPSTransactionGetByAccount5 xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <ServiceSessionKey>1efd3ca8-d5b7-4d8d-9380-bdc70c41b65a@IDS-TEST</ServiceSessionKey>
+          <RequestID>2847F0A9-0073-4934-B5C1-A249E4BBCCE9</RequestID>
+          <Updates>false</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>1000</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark>
+            <TransactionNumber xsi:nil="true" />
+          </PagingBookmark>
+          <PagingDirection>0</PagingDirection>
+          <InputLocalizationType>0</InputLocalizationType>
+          <OutputLocalizationType>0</OutputLocalizationType>
+        </Header>
+        <Parameters>
+          <AccountCode>LJK</AccountCode>
+          <DateFilterType>TradeDate</DateFilterType>
+          <DateFrom>2020-07-05T12:23:46</DateFrom>
+          <DateTo>2020-11-05T12:23:46.0454467+11:00</DateTo>
+          <SecurityHandleArray xsi:nil="true" />
+          <SecurityCodeArray xsi:nil="true" />
+          <ExchangeArray xsi:nil="true" />
+          <PortfolioCode xsi:nil="true" />
+          <ShowHiddenPositions>false</ShowHiddenPositions>
+          <HideExcludeFromReportPositions>true</HideExcludeFromReportPositions>
+          <HideExcludeFromFeePositions>false</HideExcludeFromFeePositions>
+          <HideUnmanagedPositions>false</HideUnmanagedPositions>
+          <OrderFilter>All</OrderFilter>
+          <ClientReferenceSearchArray xsi:nil="true" />
+          <TransactionStatus xsi:nil="true" />
+          <TransactionNumber>0</TransactionNumber>
+          <ExternalReferenceSearch xsi:nil="true" />
+        </Parameters>
+      </Input>
+    </IPSTransactionGetByAccount5>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,34 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <IPSUploadDataSet1 xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <ServiceSessionKey>62726d27-c57f-4b33-8c36-d0736c96fdbd@IDSA01</ServiceSessionKey>
+          <RequestID>69F738AB-3EB1-4E2F-9427-4ECDDBBCA990</RequestID>
+          <Updates>false</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>1000</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark />
+          <PagingDirection>0</PagingDirection>
+          <InputLocalizationType>0</InputLocalizationType>
+          <OutputLocalizationType>0</OutputLocalizationType>
+        </Header>
+        <Parameters>
+          <UploadID>33880</UploadID>
+          <UploadTextArray>
+            <UploadText>&lt;HeaderBegin></UploadText>
+            <UploadText>SecurityListCode,TEST</UploadText>
+            <UploadText>SecurityListDescription,TEST SECURITY LIST</UploadText>
+            <UploadText>&lt;HeaderEnd></UploadText>
+            <UploadText>SecurityCode,Exchange</UploadText>
+            <UploadText>BHP,ASX</UploadText>
+            <UploadText>CBA,ASX</UploadText>
+          </UploadTextArray>
+          <UploadComplete>true</UploadComplete>
+        </Parameters>
+      </Input>
+    </IPSUploadDataSet1>
+  </soap:Body>
+</soap:Envelope>
