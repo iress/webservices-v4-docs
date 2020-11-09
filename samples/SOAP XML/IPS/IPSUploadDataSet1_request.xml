@@ -4,7 +4,7 @@
     <IPSUploadDataSet1 xmlns="http://webservices.iress.com.au/v4/">
       <Input>
         <Header>
-          <ServiceSessionKey>62726d27-c57f-4b33-8c36-d0736c96fdbd@IDSA01</ServiceSessionKey>
+          <ServiceSessionKey>62726d27-c57f-4b33-8c36-d0736c96fdbd@IDS-TEST</ServiceSessionKey>
           <RequestID>69F738AB-3EB1-4E2F-9427-4ECDDBBCA990</RequestID>
           <Updates>false</Updates>
           <Timeout>25</Timeout>

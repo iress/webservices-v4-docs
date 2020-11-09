@@ -8,7 +8,7 @@
       <Output>
         <Input>
           <Header>
-            <ServiceSessionKey>4b0d1401-176e-4e15-b3dd-ead032a80ba8@IDSA01</ServiceSessionKey>
+            <ServiceSessionKey>4b0d1401-176e-4e15-b3dd-ead032a80ba8@IDS-TEST</ServiceSessionKey>
             <RequestID>BAA6C3D2-9DC9-400E-A81B-3B6DF973E41A</RequestID>
             <Updates>false</Updates>
             <Timeout>25</Timeout>
