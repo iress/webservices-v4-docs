@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <IPSUploadDataSet1Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>62726d27-c57f-4b33-8c36-d0736c96fdbd@IDS-TEST</ServiceSessionKey>
+            <RequestID>69F738AB-3EB1-4E2F-9427-4ECDDBBCA990</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <UploadID>33880</UploadID>
+            <UploadTextArray>
+              <UploadText>&lt;HeaderBegin&gt;</UploadText>
+              <UploadText>SecurityListCode,TEST</UploadText>
+              <UploadText>SecurityListDescription,TEST SECURITY LIST</UploadText>
+              <UploadText>&lt;HeaderEnd&gt;</UploadText>
+              <UploadText>SecurityCode,Exchange</UploadText>
+              <UploadText>BHP,ASX</UploadText>
+              <UploadText>CBA,ASX</UploadText>
+            </UploadTextArray>
+            <UploadComplete>true</UploadComplete>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>69F738AB-3EB1-4E2F-9427-4ECDDBBCA990</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-11-05T17:03:48</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <TotalRows>7</TotalRows>
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </IPSUploadDataSet1Response>
+  </soap:Body>
+</soap:Envelope>
