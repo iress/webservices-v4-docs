@@ -8,7 +8,7 @@
         <Input>
           <Header>
             <ServiceSessionKey>AFE94D66-E697-453F-BA0E-47F2ABACFFED@IDS-TEST</ServiceSessionKey>
-            <RequestID></RequestID>
+            <RequestID>80A00814-CBD0-4D39-9BEA-3F60D73CBB4E</RequestID>
             <Updates>false</Updates>
             <Timeout>25</Timeout>
             <PageSize>1000</PageSize>

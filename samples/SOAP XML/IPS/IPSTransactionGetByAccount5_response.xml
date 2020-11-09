@@ -1,4 +1,3 @@
-05-Nov 12:24:52.63 (TID=13224) SOAP: RESPONSE - 
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"

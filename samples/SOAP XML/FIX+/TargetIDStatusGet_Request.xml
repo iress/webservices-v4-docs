@@ -5,7 +5,7 @@
       <Input>
         <Header>
           <ServiceSessionKey>9427D2C2-BD9B-42DA-925F-DC33827BE91E@IDS-TEST</ServiceSessionKey>
-          <RequestID></RequestID>
+          <RequestID>2BF56A5E-0D7C-47CD-BC24-ADA6D141164B</RequestID>
           <Updates>false</Updates>
           <Timeout>25</Timeout>
           <PageSize>1000</PageSize>

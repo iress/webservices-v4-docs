@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <TimeSeriesGet2 xmlns="http://webservices.iress.com.au/v4/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <TimeSeriesGet2 xmlns="http://webservices.iress.com.au/v4/">
       <Input>
         <Header>
-          <SessionKey>A630956D-7BD0-477B-B1A2-7441FFC0EDB6-3EAAFF18-00C8-000A-0001-00E6@IDS-TEST</SessionKey>
-          <RequestID>0D8A55F4-D507-4598-88F9-0DF144C296DA</RequestID>
+          <SessionKey>1861F237-16E9-41BB-A77D-DED307CC6506-097B3789-00C8-000A-0001-0089@IDS-TEST</SessionKey>
+          <RequestID>DCB476EE-5BD4-42AB-A416-F7C2D5301FCC</RequestID>
           <Updates>false</Updates>
           <Timeout>25</Timeout>
           <PageSize>1000</PageSize>
