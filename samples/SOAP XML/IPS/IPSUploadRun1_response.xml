@@ -3,12 +3,12 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <TargetIDStatusGetResponse xmlns="http://webservices.iress.com.au/v4/">
+    <IPSUploadRun1Response xmlns="http://webservices.iress.com.au/v4/">
       <Output>
         <Input>
           <Header>
-            <ServiceSessionKey>9427D2C2-BD9B-42DA-925F-DC33827BE91E@IDS-TEST</ServiceSessionKey>
-            <RequestID>2BF56A5E-0D7C-47CD-BC24-ADA6D141164B</RequestID>
+            <ServiceSessionKey>45f48bd6-91cd-43ad-bbe3-2a9b3a14b99b@IDS-TEST</ServiceSessionKey>
+            <RequestID>B0950A26-FC56-4A6C-8352-9A64A43B5091</RequestID>
             <Updates>false</Updates>
             <Timeout>25</Timeout>
             <PageSize>1000</PageSize>
@@ -19,28 +19,22 @@
             <OutputLocalizationType>0</OutputLocalizationType>
           </Header>
           <Parameters>
-            <TargetIDArray>
-              <TargetID>FIXTI1</TargetID>
-            </TargetIDArray>
+            <UploadID>34238</UploadID>
+            <UploadAction>START</UploadAction>
           </Parameters>
         </Input>
         <Result>
           <Header>
-            <RequestID>2BF56A5E-0D7C-47CD-BC24-ADA6D141164B</RequestID>
+            <RequestID>B0950A26-FC56-4A6C-8352-9A64A43B5091</RequestID>
             <StatusCode>2</StatusCode>
-            <WebServiceTimeStamp>2020-11-04T12:23:47</WebServiceTimeStamp>
+            <WebServiceTimeStamp>2020-12-10T13:29:40</WebServiceTimeStamp>
             <PagingBookmark></PagingBookmark>
           </Header>
           <HeaderRow></HeaderRow>
-          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <DataRow>
-              <TargetID>FIXTI1</TargetID>
-              <LoggedIn>true</LoggedIn>
-            </DataRow>
-          </DataRows>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
           <ErrorRows></ErrorRows>
         </Result>
       </Output>
-    </TargetIDStatusGetResponse>
+    </IPSUploadRun1Response>
   </soap:Body>
 </soap:Envelope>

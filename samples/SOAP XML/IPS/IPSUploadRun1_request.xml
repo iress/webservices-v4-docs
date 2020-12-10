@@ -5,8 +5,8 @@
     <IPSUploadRun1 xmlns="http://webservices.iress.com.au/v4/">
       <Input>
         <Header>
-          <ServiceSessionKey>62726d27-c57f-4b33-8c36-d0736c96fdbd@IDS-TEST</ServiceSessionKey>
-          <RequestID></RequestID>
+          <ServiceSessionKey>45f48bd6-91cd-43ad-bbe3-2a9b3a14b99b@IDS-TEST</ServiceSessionKey>
+          <RequestID>B0950A26-FC56-4A6C-8352-9A64A43B5091</RequestID>
           <Updates>false</Updates>
           <Timeout>25</Timeout>
           <PageSize>1000</PageSize>
