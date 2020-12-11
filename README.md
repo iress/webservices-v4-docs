@@ -1,6 +1,6 @@
 # webservices-v4-docs
 
-Iess Web Services V4 is a SOAP XML based document/literal style web service. It is commonly consumed in toolkits with rich SOAP support including .NET and Java.
+Iress Web Services V4 is a SOAP XML based document/literal style web service. It is commonly consumed in toolkits with rich SOAP support including .NET and Java.
 
 It can be used to access:
 * IRESS - Market Data and Web Admin
@@ -10,5 +10,5 @@ It can be used to access:
 
 This repo contains samples for:
 * SOAP XML - Request and response examples across each product
-* C# .NET applications
+* C# .NET
 * Python 
