@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <PricingQuoteGetResponse xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <SessionKey>AC4CE1D3-B281-4824-A6EE-8879A5615720-097B4F5D-00C8-000A-0001-0089@IDS-TEST</SessionKey>
+            <RequestID>D6380B2A-EBB0-4599-8193-43AEFD02EE31</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <SecurityCodeArray>
+              <SecurityCode>IRE</SecurityCode>
+            </SecurityCodeArray>
+            <ExchangeArray>
+              <Exchange>ASX</Exchange>
+            </ExchangeArray>
+            <DataSourceArray xsi:nil="true"/>
+            <UserWatchlistProvided xsi:nil="true"/>
+            <SecurityTextArray xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>D6380B2A-EBB0-4599-8193-43AEFD02EE31</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-10-15T15:44:14</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <SecurityCode>IRE</SecurityCode>
+              <Exchange>ASX</Exchange>
+              <DataSource>AUX</DataSource>
+              <ErrorNumber>0</ErrorNumber>
+              <AskCount>13</AskCount>
+              <AskPrice>1009</AskPrice>
+              <AskVolume>1770</AskVolume>
+              <BidCount>37</BidCount>
+              <BidPrice>1007</BidPrice>
+              <BidVolume>4359</BidVolume>
+              <TotalVolume>408381</TotalVolume>
+              <TotalValue>4105636.08500001</TotalValue>
+              <HighPrice>1009</HighPrice>
+              <LastPrice>1009</LastPrice>
+              <LowPrice>1000</LowPrice>
+              <MatchPrice>0</MatchPrice>
+              <MatchVolume>0</MatchVolume>
+              <MarketValue>4018401.96500001</MarketValue>
+              <MarketVolume>399675</MarketVolume>
+              <Movement>7</Movement>
+              <OpenPrice>1003</OpenPrice>
+              <QuotationBasisCode></QuotationBasisCode>
+              <CompanyReportCode>0</CompanyReportCode>
+              <TradingStatus></TradingStatus>
+              <TradeCount>4615</TradeCount>
+              <TradeDateTime>2020-10-15T15:44:13.000</TradeDateTime>
+              <UpdateDateTime>2020-10-15T15:44:13.000</UpdateDateTime>
+              <PreviousClosePrice>1002</PreviousClosePrice>
+              <Board></Board>
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </PricingQuoteGetResponse>
+  </soap:Body>
+</soap:Envelope>

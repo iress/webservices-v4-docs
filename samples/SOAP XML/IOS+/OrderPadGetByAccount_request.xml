@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <OrderPadGetByAccount xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <ServiceSessionKey>9B2EC77C-E74B-4D20-97F2-F326EF2FDAAC@IDS-TEST</ServiceSessionKey>
+          <RequestID>e93c0974-28c9-46e2-8a38-b58743be2f91</RequestID>
+          <Updates>true</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>1000</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark />
+          <PagingDirection>0</PagingDirection>
+          <InputLocalizationType>0</InputLocalizationType>
+          <OutputLocalizationType>0</OutputLocalizationType>
+        </Header>
+        <Parameters>
+          <AccountCodeArray>
+            <AccountCode>A001</AccountCode>
+          </AccountCodeArray>
+          <OrderFilter>1</OrderFilter>
+          <BackOfficeStatusArray xsi:nil="true" />
+          <DestinationArray xsi:nil="true" />
+          <DestinationExclude>false</DestinationExclude>
+          <RetrieveSecurityDescription>false</RetrieveSecurityDescription>
+          <SecurityTypeRangeArray xsi:nil="true" />
+          <OrderFilterCustomDays xsi:nil="true" />
+        </Parameters>
+      </Input>
+    </OrderPadGetByAccount>
+  </soap:Body>
+</soap:Envelope>

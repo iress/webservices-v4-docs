@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <TimeSeriesGet2Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <SessionKey>1861F237-16E9-41BB-A77D-DED307CC6506-097B3789-00C8-000A-0001-0089@IDS-TEST</SessionKey>
+            <RequestID>0D8A55F4-D507-4598-88F9-0DF144C296DA</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <SecurityCode>BHP</SecurityCode>
+            <Exchange>ASX</Exchange>
+            <DataSource xsi:nil="true"/>
+            <Frequency>Daily</Frequency>
+            <TimeSeriesFromDate>2020-10-14</TimeSeriesFromDate>
+            <TimeSeriesToDate>2020-10-15</TimeSeriesToDate>
+            <SecurityText xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>0D8A55F4-D507-4598-88F9-0DF144C296DA</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-10-15T11:48:36</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow>
+            <PriceDisplayMultiplier>100</PriceDisplayMultiplier>
+            <SecurityCode>BHP</SecurityCode>
+            <Exchange>ASX</Exchange>
+            <DataSource>AUX</DataSource>
+            <OldestSourceDate>2010-06-16</OldestSourceDate>
+          </HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <OpenPrice>50.01</OpenPrice>
+              <HighPrice>50.02</HighPrice>
+              <LowPrice>48</LowPrice>
+              <ClosePrice>50.01</ClosePrice>
+              <TotalVolume>13073</TotalVolume>
+              <TotalValue>635472.68</TotalValue>
+              <TradeCount>296</TradeCount>
+              <AdjustmentFactor>1</AdjustmentFactor>
+              <TimeSeriesDate>2020-10-14</TimeSeriesDate>
+              <MarketVWAP>48.6095525128126</MarketVWAP>
+              <ShortSold xsi:nil="true" />
+              <ShortSoldPercent xsi:nil="true" />
+              <ShortSellPosition xsi:nil="true" />
+              <ShortSellPositionPercent xsi:nil="true" />
+            </DataRow>
+            <DataRow>
+              <OpenPrice>36.52</OpenPrice>
+              <HighPrice>37.33</HighPrice>
+              <LowPrice>36.28</LowPrice>
+              <ClosePrice>37.05</ClosePrice>
+              <TotalVolume>4642220</TotalVolume>
+              <TotalValue>171367087.805001</TotalValue>
+              <TradeCount>28401</TradeCount>
+              <AdjustmentFactor>1</AdjustmentFactor>
+              <TimeSeriesDate>2020-10-15</TimeSeriesDate>
+              <MarketVWAP>36.9100736415692</MarketVWAP>
+              <ShortSold xsi:nil="true" />
+              <ShortSoldPercent xsi:nil="true" />
+              <ShortSellPosition xsi:nil="true" />
+              <ShortSellPositionPercent xsi:nil="true" />
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </TimeSeriesGet2Response>
+  </soap:Body>
+</soap:Envelope>

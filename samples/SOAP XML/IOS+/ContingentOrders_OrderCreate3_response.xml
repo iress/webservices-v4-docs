@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <OrderCreate3Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>344E92FB-E4EA-485B-B9FC-142B93721D78@IDS-TEST</ServiceSessionKey>
+            <RequestID>46863D3A-F577-4650-8C6E-BB01291210DF</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <ParentOrderNumberArray xsi:nil="true"/>
+            <SideCodeArray>
+              <SideCode>7</SideCode>
+              <SideCode>1</SideCode>
+              <SideCode>1</SideCode>
+            </SideCodeArray>
+            <AccountCodeArray>
+              <AccountCode>T1</AccountCode>
+              <AccountCode>T1</AccountCode>
+              <AccountCode>T1</AccountCode>
+            </AccountCodeArray>
+            <SecurityCodeArray>
+              <SecurityCode>CBA</SecurityCode>
+              <SecurityCode>CBA</SecurityCode>
+              <SecurityCode>CBA</SecurityCode>
+            </SecurityCodeArray>
+            <ExchangeArray>
+              <Exchange>ASX</Exchange>
+              <Exchange>ASX</Exchange>
+              <Exchange>ASX</Exchange>
+            </ExchangeArray>
+            <DestinationArray>
+              <Destination>IFDONE</Destination>
+              <Destination>AUTODESK</Destination>
+              <Destination>FIXED CO</Destination>
+            </DestinationArray>
+            <OrderMatchIDArray xsi:nil="true"/>
+            <OrderVolumeArray>
+              <OrderVolume>1003</OrderVolume>
+              <OrderVolume>1003</OrderVolume>
+              <OrderVolume>1003</OrderVolume>
+            </OrderVolumeArray>
+            <OrderPriceArray>
+              <OrderPrice>6740</OrderPrice>
+              <OrderPrice>6740</OrderPrice>
+              <OrderPrice>6790</OrderPrice>
+            </OrderPriceArray>
+            <PricingInstructionsArray>
+              <PricingInstructions>Limit</PricingInstructions>
+              <PricingInstructions>Limit</PricingInstructions>
+              <PricingInstructions>Limit</PricingInstructions>
+            </PricingInstructionsArray>
+            <LifetimeArray>
+              <Lifetime>End of Day</Lifetime>
+              <Lifetime>End of Day</Lifetime>
+              <Lifetime>End of Day</Lifetime>
+            </LifetimeArray>
+            <ExpiryDateTimeArray xsi:nil="true"/>
+            <ExecutionInstructionsArray>
+              <ExecutionInstructions xsi:nil="true"/>
+              <ExecutionInstructions xsi:nil="true"/>
+              <ExecutionInstructions>IS013(CBA.ASX),IS020(Last),IS021(Greater),IS022(6790)</ExecutionInstructions>
+            </ExecutionInstructionsArray>
+            <WorkArray xsi:nil="true"/>
+            <AcknowledgeOrderArray xsi:nil="true"/>
+            <CurrencyArray xsi:nil="true"/>
+            <SubDestinationArray xsi:nil="true"/>
+            <PrimaryClientOrderIDArray xsi:nil="true"/>
+            <SecondaryClientOrderIDArray xsi:nil="true"/>
+            <OrderGroupArray xsi:nil="true"/>
+            <OrderDetailsArray xsi:nil="true"/>
+            <CustomColumnsArray xsi:nil="true"/>
+            <OrderGiverArray xsi:nil="true"/>
+            <OrderTakerArray xsi:nil="true"/>
+            <IgnoreLimitWarningsArray xsi:nil="true"/>
+            <ExecutionInstructionsDictionaryArray xsi:nil="true"/>
+            <CustomColumnsDictionaryArray xsi:nil="true"/>
+            <TrailerCodeOnMaskArray xsi:nil="true"/>
+            <OrderTagArray xsi:nil="true"/>
+            <UseDefaultOrderAttributesArray xsi:nil="true"/>
+            <BasketNameArray xsi:nil="true"/>
+            <BrokerBookTypeArray xsi:nil="true"/>
+            <BrokerBookValueArray xsi:nil="true"/>
+            <OrderValueArray xsi:nil="true"/>
+            <PriceMultiplierArray xsi:nil="true"/>
+            <SellOrderGroupingOptionArray xsi:nil="true"/>
+            <IsLegArray>
+              <IsLeg xsi:nil="true"/>
+              <IsLeg>true</IsLeg>
+            </IsLegArray>
+            <TradingPassword xsi:nil="true"/>
+            <CountryCodeArray xsi:nil="true"/>
+            <RootSymbolArray xsi:nil="true"/>
+            <ExerciseDateArray xsi:nil="true"/>
+            <ExercisePriceArray xsi:nil="true"/>
+            <CallOrPutArray xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>46863D3A-F577-4650-8C6E-BB01291210DF</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-10-07T17:14:43</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <OrderNumber>60116946</OrderNumber>
+              <ErrorNumber>0</ErrorNumber>
+              <ErrorMessage></ErrorMessage>
+              <OrderValidationNumber>0</OrderValidationNumber>
+              <BreachAction>-1</BreachAction>
+              <BreachMessage></BreachMessage>
+              <ExecutionInstructions>CLRID(2),ITS(AUD)</ExecutionInstructions>
+              <ExecutionInstructionsDictionary>
+                <Elements>
+                  <Key>CLRID</Key>
+                  <Value>2</Value>
+                </Elements>
+                <Elements>
+                  <Key>ITS</Key>
+                  <Value>AUD</Value>
+                </Elements>
+              </ExecutionInstructionsDictionary>
+              <CustomColumns>ICOT(5),ICOT2(5),IRCN(AUS_BROKER),IRCO(None),IRCT(1159.43)</CustomColumns>
+              <CustomColumnsDictionary>
+                <Elements>
+                  <Key>ICOT</Key>
+                  <Value>5</Value>
+                </Elements>
+                <Elements>
+                  <Key>ICOT2</Key>
+                  <Value>5</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRCN</Key>
+                  <Value>AUS_BROKER</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRCO</Key>
+                  <Value>None</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRCT</Key>
+                  <Value>1159.43</Value>
+                </Elements>
+              </CustomColumnsDictionary>
+              <ExtraDetails></ExtraDetails>
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </OrderCreate3Response>
+  </soap:Body>
+</soap:Envelope>

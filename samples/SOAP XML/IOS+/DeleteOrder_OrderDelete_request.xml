@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <OrderDelete xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <ServiceSessionKey>AFE94D66-E697-453F-BA0E-47F2ABACFFED@IDS-TEST</ServiceSessionKey>
+          <RequestID>D96965EB-1C29-4EDA-9B24-5A3581868B4A</RequestID>
+          <Updates>false</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>1000</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark />
+          <PagingDirection>0</PagingDirection>
+          <InputLocalizationType>0</InputLocalizationType>
+          <OutputLocalizationType>0</OutputLocalizationType>
+        </Header>
+        <Parameters>
+          <OrderNumberArray>
+            <OrderNumber>138084514</OrderNumber>
+          </OrderNumberArray>
+          <IgnoreLimitWarningsArray xsi:nil="true" />
+          <ExecutionInstructionsArray xsi:nil="true" />
+          <ExecutionInstructionsDictionaryArray xsi:nil="true" />
+          <ExecutionInstructionsRestatedArray xsi:nil="true" />
+          <ClientSequenceNumberArray xsi:nil="true" />
+          <CustomColumnsArray xsi:nil="true" />
+          <CustomColumnsRestatedArray xsi:nil="true" />
+          <TradingPassword xsi:nil="true" />
+        </Parameters>
+      </Input>
+    </OrderDelete>
+  </soap:Body>
+</soap:Envelope>

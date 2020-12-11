@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <OrderAmend2Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>AFE94D66-E697-453F-BA0E-47F2ABACFFED@IDS-TEST</ServiceSessionKey>
+            <RequestID>7D386BD9-C115-49E5-B8CC-059FC0933D2F</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <OrderNumberArray>
+              <OrderNumber>138084514</OrderNumber>
+            </OrderNumberArray>
+            <BuyOrSellArray xsi:nil="true"/>
+            <OrderVolumeArray>
+              <OrderVolume>779</OrderVolume>
+            </OrderVolumeArray>
+            <OrderPriceArray xsi:nil="true"/>
+            <PricingInstructionsArray xsi:nil="true"/>
+            <LifetimeArray xsi:nil="true"/>
+            <ExpiryDateTimeArray xsi:nil="true"/>
+            <ExecutionInstructionsArray xsi:nil="true"/>
+            <WorkArray xsi:nil="true"/>
+            <AcknowledgeOrderArray xsi:nil="true"/>
+            <CurrencyArray xsi:nil="true"/>
+            <SubDestinationArray xsi:nil="true"/>
+            <PrimaryClientOrderIDArray xsi:nil="true"/>
+            <SecondaryClientOrderIDArray xsi:nil="true"/>
+            <OrderGroupArray xsi:nil="true"/>
+            <OrderDetailsArray xsi:nil="true"/>
+            <CustomColumnsArray xsi:nil="true"/>
+            <SideCodeArray xsi:nil="true"/>
+            <OrderGiverArray xsi:nil="true"/>
+            <OrderTakerArray xsi:nil="true"/>
+            <IgnoreLimitWarningsArray xsi:nil="true"/>
+            <ExecutionInstructionsDictionaryArray xsi:nil="true"/>
+            <CustomColumnsDictionaryArray xsi:nil="true"/>
+            <TrailerCodeOnMaskArray xsi:nil="true"/>
+            <TrailerCodeOffMaskArray xsi:nil="true"/>
+            <ExecutionInstructionsRestatedArray xsi:nil="true"/>
+            <CustomColumnsRestatedArray xsi:nil="true"/>
+            <CorporateActionArray xsi:nil="true"/>
+            <ClientSequenceNumberArray xsi:nil="true"/>
+            <ReactivateOrderArray xsi:nil="true"/>
+            <BrokerBookTypeArray xsi:nil="true"/>
+            <BrokerBookValueArray xsi:nil="true"/>
+            <OrderValueArray xsi:nil="true"/>
+            <AmendMaterialStatusArray xsi:nil="true"/>
+            <TradingPassword xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>7D386BD9-C115-49E5-B8CC-059FC0933D2F</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-10-15T22:33:15</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <OrderNumber>138084514</OrderNumber>
+              <ErrorNumber>0</ErrorNumber>
+              <ErrorMessage></ErrorMessage>
+              <OrderValidationNumber>0</OrderValidationNumber>
+              <BreachAction>-1</BreachAction>
+              <BreachMessage></BreachMessage>
+              <ExecutionInstructions>CLRID(2),IAOR(A001),IOCA(Agency),IRPMBV(0.00),ITS(AUD)</ExecutionInstructions>
+              <ExecutionInstructionsDictionary>
+                <Elements>
+                  <Key>CLRID</Key>
+                  <Value>2</Value>
+                </Elements>
+                <Elements>
+                  <Key>IAOR</Key>
+                  <Value>A001</Value>
+                </Elements>
+                <Elements>
+                  <Key>IOCA</Key>
+                  <Value>Agency</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRPMBV</Key>
+                  <Value>0.00</Value>
+                </Elements>
+                <Elements>
+                  <Key>ITS</Key>
+                  <Value>AUD</Value>
+                </Elements>
+              </ExecutionInstructionsDictionary>
+              <CustomColumns>ICOT(5),ICOT2(5),IRSM</CustomColumns>
+              <CustomColumnsDictionary>
+                <Elements>
+                  <Key>ICOT</Key>
+                  <Value>5</Value>
+                </Elements>
+                <Elements>
+                  <Key>ICOT2</Key>
+                  <Value>5</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRSM</Key>
+                  <Value></Value>
+                </Elements>
+              </CustomColumnsDictionary>
+              <ExtraDetails></ExtraDetails>
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </OrderAmend2Response>
+  </soap:Body>
+</soap:Envelope>

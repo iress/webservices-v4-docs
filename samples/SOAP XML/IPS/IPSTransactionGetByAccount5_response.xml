@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <IPSTransactionGetByAccount5Response xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>1efd3ca8-d5b7-4d8d-9380-bdc70c41b65a@IDS-TEST</ServiceSessionKey>
+            <RequestID>2847F0A9-0073-4934-B5C1-A249E4BBCCE9</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark>
+              <TransactionNumber xsi:nil="true"/>
+            </PagingBookmark>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <AccountCode>LJK</AccountCode>
+            <DateFilterType>TradeDate</DateFilterType>
+            <DateFrom>2020-07-05T12:23:46</DateFrom>
+            <DateTo>2020-11-05T12:23:46.0454467+11:00</DateTo>
+            <SecurityHandleArray xsi:nil="true"/>
+            <SecurityCodeArray xsi:nil="true"/>
+            <ExchangeArray xsi:nil="true"/>
+            <PortfolioCode xsi:nil="true"/>
+            <ShowHiddenPositions>false</ShowHiddenPositions>
+            <HideExcludeFromReportPositions>true</HideExcludeFromReportPositions>
+            <HideExcludeFromFeePositions>false</HideExcludeFromFeePositions>
+            <HideUnmanagedPositions>false</HideUnmanagedPositions>
+            <OrderFilter>All</OrderFilter>
+            <ClientReferenceSearchArray xsi:nil="true"/>
+            <TransactionStatus xsi:nil="true"/>
+            <TransactionNumber>0</TransactionNumber>
+            <ExternalReferenceSearch xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>2847F0A9-0073-4934-B5C1-A249E4BBCCE9</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-11-05T12:24:52</WebServiceTimeStamp>
+            <PagingBookmark>
+              <TransactionNumber xsi:nil="true" />
+            </PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <TransactionNumber>2974874</TransactionNumber>
+              <PositionNumber>1151504</PositionNumber>
+              <AccountCode>LJK</AccountCode>
+              <PortfolioCode>DEFAULT</PortfolioCode>
+              <SecurityHandle>-10001</SecurityHandle>
+              <SecurityCode>CASH</SecurityCode>
+              <Exchange>UNL</Exchange>
+              <SecurityType>480</SecurityType>
+              <PriceMultiplier>0.01</PriceMultiplier>
+              <SecurityUnlisted>true</SecurityUnlisted>
+              <SecurityName>CASH ASSET</SecurityName>
+              <SecurityDescription>CASH ASSET</SecurityDescription>
+              <AssetClassName>Cash</AssetClassName>
+              <SectorName>Cash</SectorName>
+              <IssuerCode xsi:nil="true" />
+              <IssuerExchange xsi:nil="true" />
+              <IssuerName xsi:nil="true" />
+              <IssuerFullName xsi:nil="true" />
+              <SecurityUserReference>Security User Reference CASH.UNL</SecurityUserReference>
+              <GICSSector xsi:nil="true" />
+              <GICSSubIndustry xsi:nil="true" />
+              <GICSIndustryGroup xsi:nil="true" />
+              <GICSIndustry xsi:nil="true" />
+              <GICSCode xsi:nil="true" />
+              <ISIN></ISIN>
+              <Volume>0</Volume>
+              <Value>0</Value>
+              <TransactionPrice>100</TransactionPrice>
+              <Income>0</Income>
+              <NativeCurrency>AUD</NativeCurrency>
+              <FXRate>1</FXRate>
+              <TransactionDate>2020-07-09T00:00:00.000</TransactionDate>
+              <SettlementDate>2020-07-09T00:00:00.000</SettlementDate>
+              <TaxDate>2020-07-09T00:00:00.000</TaxDate>
+              <CreateDateTime>2020-07-10T09:36:03.920</CreateDateTime>
+              <ModifyDateTime>2020-07-10T09:36:03.920</ModifyDateTime>
+              <UnmatchedVolume>0</UnmatchedVolume>
+              <FeeTotal>0</FeeTotal>
+              <TaxTotal>0</TaxTotal>
+              <NetValue>0</NetValue>
+              <CorporateActionNumber xsi:nil="true" />
+              <LinkTransactionNumber>0</LinkTransactionNumber>
+              <TransactionStatus>Actual</TransactionStatus>
+              <TransactionType>AJ</TransactionType>
+              <TransactionTypeDescription>Adjustment Up</TransactionTypeDescription>
+              <SubTransactionTypeName></SubTransactionTypeName>
+              <TransactionDescription>Adjustment Up: CASH ASSET (CASH)</TransactionDescription>
+              <VendorCode>SPIPS3_IOSP</VendorCode>
+              <ExternalReference xsi:nil="true" />
+              <CashSecurityHandle xsi:nil="true" />
+              <CashSecurityCode xsi:nil="true" />
+              <CashExchange xsi:nil="true" />
+              <CashCurrency></CashCurrency>
+              <CashFXRate>0</CashFXRate>
+              <ClientReferenceType></ClientReferenceType>
+              <ClientReference></ClientReference>
+              <AccruedInterest>0</AccruedInterest>
+              <Brokerage>0</Brokerage>
+              <Commission>0</Commission>
+              <GST>0</GST>
+              <GSTReducedInputTaxCredit>0</GSTReducedInputTaxCredit>
+              <ImputationCredit>0</ImputationCredit>
+              <ReturnOfCapital>0</ReturnOfCapital>
+              <StampDuty>0</StampDuty>
+              <VAT>0</VAT>
+              <BrokerCode xsi:nil="true" />
+              <OrderNumber xsi:nil="true" />
+              <CGTApplicable>false</CGTApplicable>
+              <BookingDestination xsi:nil="true" />
+              <TransactionNotes></TransactionNotes>
+              <InitialMargin>0</InitialMargin>
+              <ExecutionDestination xsi:nil="true" />
+              <CostBaseAdjustmentTaxFree xsi:nil="true" />
+              <CostBaseAdjustmentTaxDeferred xsi:nil="true" />
+              <CostBaseAdjustmentReturnOfCapital xsi:nil="true" />
+              <CostBaseAdjustmentIndexedCostBase xsi:nil="true" />
+              <CustodialEntityCode xsi:nil="true" />
+              <OrderInstruction></OrderInstruction>
+              <CashPortfolioCode></CashPortfolioCode>
+              <TransactionSharesPerContract xsi:nil="true" />
+              <TransactionReadOnly xsi:nil="true" />
+              <OrderReference xsi:nil="true" />
+              <TransactionReadOnlyIRESSnet>false</TransactionReadOnlyIRESSnet>
+              <PortfolioName></PortfolioName>
+              <ExternalAccountID>LJK</ExternalAccountID>
+              <SubPortfolioCode xsi:nil="true" />
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </IPSTransactionGetByAccount5Response>
+  </soap:Body>
+</soap:Envelope>

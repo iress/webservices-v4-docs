@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <TargetIDStatusGetResponse xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>9427D2C2-BD9B-42DA-925F-DC33827BE91E@IDS-TEST</ServiceSessionKey>
+            <RequestID>2BF56A5E-0D7C-47CD-BC24-ADA6D141164B</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <TargetIDArray>
+              <TargetID>FIXTI1</TargetID>
+            </TargetIDArray>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>2BF56A5E-0D7C-47CD-BC24-ADA6D141164B</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-11-04T12:23:47</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <TargetID>FIXTI1</TargetID>
+              <LoggedIn>true</LoggedIn>
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </TargetIDStatusGetResponse>
+  </soap:Body>
+</soap:Envelope>

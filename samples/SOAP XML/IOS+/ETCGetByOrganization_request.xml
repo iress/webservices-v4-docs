@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ETCGetByOrganization xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <ServiceSessionKey>BABC42E7-9756-4E31-8EBE-C2F2915F9EED@IDS-TEST</ServiceSessionKey>
+          <RequestID></RequestID>
+          <Updates>false</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>1000</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark />
+          <PagingDirection>0</PagingDirection>
+          <InputLocalizationType>0</InputLocalizationType>
+          <OutputLocalizationType>0</OutputLocalizationType>
+        </Header>
+        <Parameters>
+          <OrganizationArray>
+            <Organization>IRESS</Organization>
+          </OrganizationArray>
+          <IncludeDeletedETCs>false</IncludeDeletedETCs>
+          <AsAtDateFrom xsi:nil="true" />
+          <AsAtDateTo xsi:nil="true" />
+          <TradeDateFrom>2020-05-27</TradeDateFrom>
+          <TradeDateTo>2020-10-28</TradeDateTo>
+          <CreateDateTimeFrom xsi:nil="true" />
+          <CreateDateTimeTo xsi:nil="true" />
+          <UpdateDateTimeFrom xsi:nil="true" />
+          <UpdateDateTimeTo xsi:nil="true" />
+          <AcceptDateTimeFrom xsi:nil="true" />
+          <AcceptDateTimeTo xsi:nil="true" />
+          <SecurityCode xsi:nil="true" />
+          <Exchange xsi:nil="true" />
+          <SideCodeArray xsi:nil="true" />
+          <ETCStatusNumberArray xsi:nil="true" />
+          <Destination xsi:nil="true" />
+        </Parameters>
+      </Input>
+    </ETCGetByOrganization>
+  </soap:Body>
+</soap:Envelope>

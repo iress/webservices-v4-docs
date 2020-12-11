@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <OrderPadGetByAccountResponse xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>9B2EC77C-E74B-4D20-97F2-F326EF2FDAAC@IDS-TEST</ServiceSessionKey>
+            <RequestID>e93c0974-28c9-46e2-8a38-b58743be2f91</RequestID>
+            <Updates>true</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <AccountCodeArray>
+              <AccountCode>A001</AccountCode>
+            </AccountCodeArray>
+            <OrderFilter>1</OrderFilter>
+            <BackOfficeStatusArray xsi:nil="true"/>
+            <DestinationArray xsi:nil="true"/>
+            <DestinationExclude>false</DestinationExclude>
+            <RetrieveSecurityDescription>false</RetrieveSecurityDescription>
+            <SecurityTypeRangeArray xsi:nil="true"/>
+            <OrderFilterCustomDays xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>e93c0974-28c9-46e2-8a38-b58743be2f91</RequestID>
+            <StatusCode>3</StatusCode>
+            <WebServiceTimeStamp>2020-10-30T10:25:23</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <RootParentOrderNumber>138185087</RootParentOrderNumber>
+              <OrderNumber>138185087</OrderNumber>
+              <ParentOrderNumber>0</ParentOrderNumber>
+              <AccountCode>A001</AccountCode>
+              <SecurityCode>BHP</SecurityCode>
+              <Exchange>ASX</Exchange>
+              <Destination>DESK</Destination>
+              <SubDestination></SubDestination>
+              <BuyOrSell>B</BuyOrSell>
+              <PricingInstructions>Limit</PricingInstructions>
+              <OrderState>ACTIVE</OrderState>
+              <LastAction>CREATE</LastAction>
+              <ActionStatus>OK</ActionStatus>
+              <OrderVolume>111</OrderVolume>
+              <OrderPrice>7399</OrderPrice>
+              <RemainingVolume>111</RemainingVolume>
+              <DoneVolumeTotal>0</DoneVolumeTotal>
+              <DoneValueTotal>0</DoneValueTotal>
+              <UncommittedVolume>111</UncommittedVolume>
+              <AveragePrice>0</AveragePrice>
+              <InternalOrderStatus>Not Worked</InternalOrderStatus>
+              <ExternalOrderStatus></ExternalOrderStatus>
+              <Lifetime>Date</Lifetime>
+              <ExecutionInstructions>155(1.0),CLRID(2),IAOR(A001),IOCA(Agency),IRPMBV(0.00),ITS(AUD),TEST0001(20201022-04:30:00 +1100),TEST0002</ExecutionInstructions>
+              <Currency>AUD</Currency>
+              <PrimaryClientOrderID></PrimaryClientOrderID>
+              <SecondaryClientOrderID>A001</SecondaryClientOrderID>
+              <ExpiryDateTime>2020-12-24T08:00:00.000</ExpiryDateTime>
+              <OrderGroup></OrderGroup>
+              <OrderDetails></OrderDetails>
+              <DoneVolumeToday>0</DoneVolumeToday>
+              <DoneValueToday>0</DoneValueToday>
+              <StateDescription>Create - User warnings: Last price (7500.000) differs from current price (7399) by more than 100 price steps.</StateDescription>
+              <CreateDateTime>2020-10-22T16:13:05.513</CreateDateTime>
+              <UpdateDateTime>2020-10-30T04:00:04.230</UpdateDateTime>
+              <WorkingGroup xsi:nil="true" />
+              <WorkedByUserCode xsi:nil="true" />
+              <OrderVWAPStartTime>2020-10-30T00:00:00.000</OrderVWAPStartTime>
+              <OrderVWAPEndTime>1899-12-30T00:00:00.000</OrderVWAPEndTime>
+              <StartMarketVolume>0</StartMarketVolume>
+              <StartMarketValue>0</StartMarketValue>
+              <DestinationVolume>0</DestinationVolume>
+              <DestinationPrice>0</DestinationPrice>
+              <DestinationStatus></DestinationStatus>
+              <DestinationOrderNumber></DestinationOrderNumber>
+              <DestinationUserID></DestinationUserID>
+              <Organisation>IRESS</Organisation>
+              <AverageFXRate>0</AverageFXRate>
+              <Principal>false</Principal>
+              <LastErrorNumber>0</LastErrorNumber>
+              <CustomColumns>ICOT(2),ICOT2(2),IRSM,ITAX(TRUE),WRKS(New)</CustomColumns>
+              <SecurityType>100</SecurityType>
+              <OrderMatchID></OrderMatchID>
+              <MarketDataOrderNumber>0</MarketDataOrderNumber>
+              <SideCode>1</SideCode>
+              <OrderGiver></OrderGiver>
+              <OrderTaker>autotest1@IRESS</OrderTaker>
+              <UpdateReasonMask xsi:nil="true" />
+              <BackOfficeStatus>Not sent</BackOfficeStatus>
+              <BackOfficeStatusDescription></BackOfficeStatusDescription>
+              <OrderFlagsMask>562949986984200</OrderFlagsMask>
+              <EffectiveDoneVolume>0</EffectiveDoneVolume>
+              <SideDescription>Buy</SideDescription>
+              <ExecutionInstructionsDictionary>
+                <Elements>
+                  <Key>155</Key>
+                  <Value>1.0</Value>
+                </Elements>
+                <Elements>
+                  <Key>CLRID</Key>
+                  <Value>2</Value>
+                </Elements>
+                <Elements>
+                  <Key>IAOR</Key>
+                  <Value>A001</Value>
+                </Elements>
+                <Elements>
+                  <Key>IOCA</Key>
+                  <Value>Agency</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRPMBV</Key>
+                  <Value>0.00</Value>
+                </Elements>
+                <Elements>
+                  <Key>ITS</Key>
+                  <Value>AUD</Value>
+                </Elements>
+                <Elements>
+                  <Key>TEST0001</Key>
+                  <Value>20201022-04:30:00 +1100</Value>
+                </Elements>
+                <Elements>
+                  <Key>TEST0002</Key>
+                  <Value></Value>
+                </Elements>
+              </ExecutionInstructionsDictionary>
+              <CustomColumnsDictionary>
+                <Elements>
+                  <Key>ICOT</Key>
+                  <Value>2</Value>
+                </Elements>
+                <Elements>
+                  <Key>ICOT2</Key>
+                  <Value>2</Value>
+                </Elements>
+                <Elements>
+                  <Key>IRSM</Key>
+                  <Value></Value>
+                </Elements>
+                <Elements>
+                  <Key>ITAX</Key>
+                  <Value>TRUE</Value>
+                </Elements>
+                <Elements>
+                  <Key>WRKS</Key>
+                  <Value>New</Value>
+                </Elements>
+              </CustomColumnsDictionary>
+              <PriceMultiplier>0.01</PriceMultiplier>
+              <SettlementDoneValueTotal>0</SettlementDoneValueTotal>
+              <SettlementDoneValueToday>0</SettlementDoneValueToday>
+              <SettlementAveragePrice xsi:nil="true" />
+              <TrailerCodeOnMask>0</TrailerCodeOnMask>
+              <TrailerCodes></TrailerCodes>
+              <LastActionUserCode>autotest1@IRESS</LastActionUserCode>
+              <ClientSequenceNumber>1</ClientSequenceNumber>
+              <MarketDetail></MarketDetail>
+              <PostTradeStatusNumber>1</PostTradeStatusNumber>
+              <OrderLockedUserCode xsi:nil="true" />
+              <OrderLockedDateTime xsi:nil="true" />
+              <BackOfficeProvider xsi:nil="true" />
+              <BasketName></BasketName>
+              <EstimatedPrice>7399</EstimatedPrice>
+              <RootParentOrderCreatorUserCode>autotest1@IRESS</RootParentOrderCreatorUserCode>
+              <OrderValue>8212.89</OrderValue>
+              <OrderFlagsMask2>16384</OrderFlagsMask2>
+              <more... 6686 chars>

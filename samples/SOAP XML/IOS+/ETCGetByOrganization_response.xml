@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ETCGetByOrganizationResponse xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <ServiceSessionKey>BABC42E7-9756-4E31-8EBE-C2F2915F9EED@IDS-TEST</ServiceSessionKey>
+            <RequestID></RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>1000</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark/>
+            <PagingDirection>0</PagingDirection>
+            <InputLocalizationType>0</InputLocalizationType>
+            <OutputLocalizationType>0</OutputLocalizationType>
+          </Header>
+          <Parameters>
+            <OrganizationArray>
+              <Organization>IRESS</Organization>
+            </OrganizationArray>
+            <IncludeDeletedETCs>false</IncludeDeletedETCs>
+            <AsAtDateFrom xsi:nil="true"/>
+            <AsAtDateTo xsi:nil="true"/>
+            <TradeDateFrom>2020-05-27</TradeDateFrom>
+            <TradeDateTo>2020-10-28</TradeDateTo>
+            <CreateDateTimeFrom xsi:nil="true"/>
+            <CreateDateTimeTo xsi:nil="true"/>
+            <UpdateDateTimeFrom xsi:nil="true"/>
+            <UpdateDateTimeTo xsi:nil="true"/>
+            <AcceptDateTimeFrom xsi:nil="true"/>
+            <AcceptDateTimeTo xsi:nil="true"/>
+            <SecurityCode xsi:nil="true"/>
+            <Exchange xsi:nil="true"/>
+            <SideCodeArray xsi:nil="true"/>
+            <ETCStatusNumberArray xsi:nil="true"/>
+            <Destination xsi:nil="true"/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>6F8FAA9D-D961-4004-8613-EE339037A610</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2020-10-28T00:21:45</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <ETCNumber>1</ETCNumber>
+              <BookingNumber>-1</BookingNumber>
+              <BookingCodeNumber>67</BookingCodeNumber>
+              <SecurityCode>BHP</SecurityCode>
+              <Exchange>ASX</Exchange>
+              <SideCode>1</SideCode>
+              <ETCStatusNumber>1</ETCStatusNumber>
+              <ContractClass>Normal</ContractClass>
+              <CrossingIndicator>false</CrossingIndicator>
+              <PrincipalTrade>false</PrincipalTrade>
+              <FreeOfPayment>true</FreeOfPayment>
+              <StockLending>false</StockLending>
+              <SRN></SRN>
+              <CSN></CSN>
+              <SettlementDate>2020-06-01</SettlementDate>
+              <AsAtDate>2020-05-28</AsAtDate>
+              <TradeDate>2020-05-28</TradeDate>
+              <Instructions></Instructions>
+              <TransactionBasis></TransactionBasis>
+              <ETCVolume>0</ETCVolume>
+              <ETCAveragePrice>0</ETCAveragePrice>
+              <ETCValue>0</ETCValue>
+              <CommissionType>2</CommissionType>
+              <Commission>0</Commission>
+              <MiscFees>
+                <MiscFees/>
+              </MiscFees>
+              <SettlementCurrency>AUD</SettlementCurrency>
+              <SettlementFXRate>1</SettlementFXRate>
+              <ContractNote></ContractNote>
+              <TradingBrokerFullNameAndAddress></TradingBrokerFullNameAndAddress>
+              <TradingBrokerABN></TradingBrokerABN>
+              <TradingBrokerClearingOrganization></TradingBrokerClearingOrganization>
+              <TradingBrokerPID></TradingBrokerPID>
+              <TradingBrokerBIC></TradingBrokerBIC>
+              <TradingBrokerInternalReference></TradingBrokerInternalReference>
+              <TradingBrokerAccountOrReference></TradingBrokerAccountOrReference>
+              <TradingBrokerComments></TradingBrokerComments>
+              <TradingBrokerSettlementTime xsi:nil="true" />
+              <ClearingBrokerSameAsTradingBroker>false</ClearingBrokerSameAsTradingBroker>
+              <ClearingBrokerFullNameAndAddress></ClearingBrokerFullNameAndAddress>
+              <ClearingBrokerABN></ClearingBrokerABN>
+              <ClearingBrokerClearingOrganization></ClearingBrokerClearingOrganization>
+              <ClearingBrokerPID></ClearingBrokerPID>
+              <ClearingBrokerBIC></ClearingBrokerBIC>
+              <ClearingBrokerInternalReference></ClearingBrokerInternalReference>
+              <ClearingBrokerAccountOrReference></ClearingBrokerAccountOrReference>
+              <ClearingBrokerComments></ClearingBrokerComments>
+              <ClearingBrokerSettlementTime xsi:nil="true" />
+              <ClientFullNameAndAddress></ClientFullNameAndAddress>
+              <ClientExternalReference></ClientExternalReference>
+              <ClientABN></ClientABN>
+              <SettlementInstructions></SettlementInstructions>
+              <RejectReason xsi:nil="true" />
+              <AcceptUserCode xsi:nil="true" />
+              <AcceptedDateTime xsi:nil="true" />
+              <UpdateDateTime>2020-05-28T20:49:08.728</UpdateDateTime>
+              <FIXConfirmID>20200528-20:49:08.613760</FIXConfirmID>
+              <SettlementStatus>-1</SettlementStatus>
+              <SettlementRejectReason xsi:nil="true" />
+              <HadCustodianStatus>false</HadCustodianStatus>
+              <DestinationETCNumber>0</DestinationETCNumber>
+              <SoftCommission>0</SoftCommission>
+              <Destination></Destination>
+              <Organization>IRESS</Organization>
+              <AccountList xsi:nil="true" />
+            </DataRow>
+            <DataRow>
+              <ETCNumber>2</ETCNumber>
+              <BookingNumber>-1</BookingNumber>
+              <BookingCodeNumber>67</BookingCodeNumber>
+              <SecurityCode>BHP</SecurityCode>
+              <Exchange>ASX</Exchange>
+              <SideCode>1</SideCode>
+              <ETCStatusNumber>1</ETCStatusNumber>
+              <ContractClass>Normal</ContractClass>
+              <CrossingIndicator>false</CrossingIndicator>
+              <PrincipalTrade>false</PrincipalTrade>
+              <FreeOfPayment>true</FreeOfPayment>
+              <StockLending>false</StockLending>
+              <SRN></SRN>
+              <CSN></CSN>
+              <SettlementDate>2020-06-01</SettlementDate>
+              <AsAtDate>2020-05-28</AsAtDate>
+              <TradeDate>2020-05-28</TradeDate>
+              <Instructions></Instructions>
+              <TransactionBasis></TransactionBasis>
+              <ETCVolume>0</ETCVolume>
+              <ETCAveragePrice>0</ETCAveragePrice>
+              <ETCValue>0</ETCValue>
+              <CommissionType>0</CommissionType>
+              <Commission>0</Commission>
+              <MiscFees>
+                <MiscFees/>
+              </MiscFees>
+              <SettlementCurrency>AUD</SettlementCurrency>
+              <SettlementFXRate>1</SettlementFXRate>
+              <ContractNote></ContractNote>
+              <TradingBrokerFullNameAndAddress></TradingBrokerFullNameAndAddress>
+              <TradingBrokerABN></TradingBrokerABN>
+              <TradingBrokerClearingOrganization></TradingBrokerClearingOrganization>
+              <TradingBrokerPID></TradingBrokerPID>
+              <TradingBrokerBIC></TradingBrokerBIC>
+              <TradingBrokerInternalReference></TradingBrokerInternalReference>
+              <TradingBrokerAccountOrReference></TradingBrokerAccountOrReference>
+              <TradingBrokerComments></TradingBrokerComments>
+              <TradingBrokerS<more... 57211 chars>
