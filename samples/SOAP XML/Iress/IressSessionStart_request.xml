@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <IRESSSessionStart xmlns="http://webservices.iress.com.au/v4/">
+      <Input>
+        <Header>
+          <SessionKey/>
+          <RequestID>fb417c8d-317f-40fa-98b7-d2c5e00281b8</RequestID>
+          <Updates>false</Updates>
+          <Timeout>25</Timeout>
+          <PageSize>0</PageSize>
+          <WaitForResponse>true</WaitForResponse>
+          <PagingBookmark xsi:nil="true"/>
+          <PagingDirection>0</PagingDirection>
+        </Header>
+        <Parameters>
+          <UserName>autotest1</UserName>
+          <CompanyName>iress</CompanyName>
+          <Password>******</Password>
+          <ApplicationID>9dbe8889-2c11-47a1-b182-cde7838a2265</ApplicationID>
+          <ApplicationLabel>WebServicesTester</ApplicationLabel>
+          <PreviousSessionKey xsi:nil="true"/>
+          <SessionTimeout xsi:nil="true"/>
+          <AuthenticationType xsi:nil="true"/>
+          <SessionNumberToKick xsi:nil="true"/>
+          <KickLikeSessions xsi:nil="true"/>
+          <Locale/>
+          <LocalePrivateUseSubtags/>
+        </Parameters>
+      </Input>
+    </IRESSSessionStart>
+  </s:Body>
+</s:Envelope>
