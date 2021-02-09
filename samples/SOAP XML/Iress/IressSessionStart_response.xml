@@ -17,8 +17,8 @@
             <PagingDirection>0</PagingDirection>
           </Header>
           <Parameters>
-            <UserName>autotest1</UserName>
-            <CompanyName>iress</CompanyName>
+            <UserName>username</UserName>
+            <CompanyName>company</CompanyName>
             <Password>******</Password>
             <ApplicationID>9dbe8889-2c11-47a1-b182-cde7838a2265</ApplicationID>
             <ApplicationLabel>WebServicesTester</ApplicationLabel>
