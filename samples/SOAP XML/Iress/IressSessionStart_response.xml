@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <IRESSSessionStartResponse xmlns="http://webservices.iress.com.au/v4/">
+      <Output>
+        <Input>
+          <Header>
+            <SessionKey/>
+            <RequestID>fb417c8d-317f-40fa-98b7-d2c5e00281b8</RequestID>
+            <Updates>false</Updates>
+            <Timeout>25</Timeout>
+            <PageSize>0</PageSize>
+            <WaitForResponse>true</WaitForResponse>
+            <PagingBookmark xsi:nil="true"/>
+            <PagingDirection>0</PagingDirection>
+          </Header>
+          <Parameters>
+            <UserName>username</UserName>
+            <CompanyName>company</CompanyName>
+            <Password>******</Password>
+            <ApplicationID>9dbe8889-2c11-47a1-b182-cde7838a2265</ApplicationID>
+            <ApplicationLabel>WebServicesTester</ApplicationLabel>
+            <PreviousSessionKey xsi:nil="true"/>
+            <SessionTimeout xsi:nil="true"/>
+            <AuthenticationType xsi:nil="true"/>
+            <SessionNumberToKick xsi:nil="true"/>
+            <KickLikeSessions xsi:nil="true"/>
+            <Locale/>
+            <LocalePrivateUseSubtags/>
+          </Parameters>
+        </Input>
+        <Result>
+          <Header>
+            <RequestID>fb417c8d-317f-40fa-98b7-d2c5e00281b8</RequestID>
+            <StatusCode>2</StatusCode>
+            <WebServiceTimeStamp>2021-02-04T10:22:54</WebServiceTimeStamp>
+            <PagingBookmark></PagingBookmark>
+          </Header>
+          <HeaderRow></HeaderRow>
+          <DataRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataRow>
+              <IRESSSessionKey>0F4D5AFF-4140-4B39-B178-B0BB9DA40376-09BEF5B9-00C8-000A-0001-0089@IDS-TEST</IRESSSessionKey>
+              <UserToken>060FBA0B6824458C162B300EFCC3CFB7AC570000B1EFD82C0F99E540B1C60500453D0000</UserToken>
+              <LastLoggedInDateTime>2021-02-03T23:22:49.163</LastLoggedInDateTime>
+              <PasswordExpiryDays xsi:nil="true" />
+            </DataRow>
+          </DataRows>
+          <ErrorRows></ErrorRows>
+        </Result>
+      </Output>
+    </IRESSSessionStartResponse>
+  </soap:Body>
+</soap:Envelope>.
