@@ -177,22 +177,25 @@ def main(username, companyname, password, iosname, thresholdvalue, percentchange
     # Configure Zeep settings
     settings = Settings(strict = False, xml_huge_tree = True)
 
+    # Work out IRESS WSDL endpoint details
+    iressMethodList = "AlertCreate,AlertGet,AlertDelete"
+    iressWsdl = "{}?un={}&cp={}&pw={}&svc=IRESS&svr={}&mf={}".format(endpoint, username, companyname, password, "", iressMethodList)
+
     # Work out IOS+ WSDL endpoint details
     iosPlusMethodList = "PortfolioGet,PortfolioPositionDetailGet"
     iosPlusWsdl = "{}?un={}&cp={}&pw={}&svc=IOSPlus&svr={}&mf={}".format(endpoint, username, companyname, password, iosname, iosPlusMethodList)
 
-    # Work out IRESS  WSDL endpoint details
-    iressMethodList = "AlertCreate,AlertGet,AlertDelete"
-    iressWsdl = "{}?un={}&cp={}&pw={}&svc=IRESS&svr={}&mf={}".format(endpoint, username, companyname, password, "", iressMethodList)
-
-    # Create the Web Services client objects, one for the IOS+ WSDL and one for the IRESS WSDL
-    iosPlusClient = Client(iosPlusWsdl, settings=settings)
+    # Create the Web Services client objects, one for the IRESS WSDL and one for the IOS+ WSDL
     iressClient = Client(iressWsdl, settings=settings)
+    iosPlusClient = Client(iosPlusWsdl, settings=settings)    
 
     # Obtain the factories for the client objects
-    iosPlusClientFactory = iosPlusClient.type_factory('ns0')
-    iressClientFactory = iressClient.type_factory('ns0')
+    iressClient.set_ns_prefix("ns0", "http://webservices.iress.com.au/v4/")
+    iressClientFactory = iressClient.type_factory('http://webservices.iress.com.au/v4/')
 
+    iosPlusClient.set_ns_prefix("ns0", "http://webservices.iress.com.au/v4/")
+    iosPlusClientFactory = iosPlusClient.type_factory('http://webservices.iress.com.au/v4/')
+    
     # Start the IRESS and IOS Service session
     iressSessionStartResponse = iosPlusClient.service.IRESSSessionStart(iosPlusClientFactory.IRESSSessionStartInput(Header=iosPlusClientFactory.IRESSSessionStartInputHeader(Updates=False), Parameters=iosPlusClientFactory.IRESSSessionStartInputParameters(UserName=username, CompanyName=companyname, Password=password)))
     iressSessionKey = iressSessionStartResponse.Result.DataRows.DataRow[0].IRESSSessionKey
