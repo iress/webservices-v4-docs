@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IosPlusTradesDownload": {
+      "commandName": "Project",
+      "commandLineArgs": "-r 2021/12/01 -t 0"
+    }
+  }
+}
