@@ -1,0 +1,18 @@
+version: '3.0'
+services:
+  iosplusdownload:
+    build:
+        context: .
+        dockerfile: ./Dockerfile
+    environment:
+        - iosplusdownload_UserName=${iosplusdownload_UserName}
+        - iosplusdownload_Company=${iosplusdownload_Company}
+        - iosplusdownload_Password=${iosplusdownload_Password}
+        - iosplusdownload_SoapEndpoint=${iosplusdownload_SoapEndpoint}
+        - iosplusdownload_IosPlusServer=${iosplusdownload_IosPlusServer}
+    restart: "no"
+    stdin_open: true
+    tty: true
+    volumes:
+        - ./logs:/app/logs
+        - ./output:/app/output
