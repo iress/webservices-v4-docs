@@ -5,7 +5,7 @@ The solution file was created under Visual Studio 2019, however it should be pos
 
 The quickest way to get up an running is by running within Docker. First clone the repository:
 ```
-git clone @github.com:oneiress/iosplus-download.git
+git clone git@github.com:iress/webservices-v4-docs.git
 ```
 
 Then set the following environment variables that provide the credentials for authentication and server specification:
