@@ -1,6 +1,6 @@
-This is a C# .NET 5.0 sample application intended that demonstrates using Web Services V4 to extract trades, audit trail, and order search records from an IOS+ server into a CSV file.
+This is a C# .NET 8.0 sample application intended that demonstrates using Web Services V4 to extract trades, audit trail, and order search records from an IOS+ server into a CSV file.
 
-The prerequisites for running this sample are .NET 5.0, and are intended to be supported cross-platform: Windows, Linux, and Mac. 
+The prerequisites for running this sample are .NET 8.0, and are intended to be supported cross-platform: Windows, Linux, and Mac. 
 The solution file was created under Visual Studio 2019, however it should be possible to use Visual Studio Code or another editor to view or edit the code as well as build and run the sample via the command line.
 
 The quickest way to get up an running is by running within Docker. First clone the repository:
