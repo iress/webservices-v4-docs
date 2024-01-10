@@ -1,3 +1,6 @@
+from requests import Session
+from requests.auth import HTTPBasicAuth
+from zeep.transports import Transport
 from zeep import Client, Settings
 import logging
 import os
@@ -56,14 +59,18 @@ def main(username, companyname, password, iosname, endpoint, ordercount, securit
 
     # Work out IOS+ WSDL endpoint details
     iosPlusMethodList = "OrderCreate3"
-    iosPlusWsdl = "{}?un={}&cp={}&pw={}&svc=IOSPlus&svr={}&mf={}".format(endpoint, username, companyname, password, iosname, iosPlusMethodList)
+    iosPlusWsdl = "{}?svc=IOSPlus&svr={}&mf={}".format(endpoint, iosname, iosPlusMethodList)
 
     # Create the Web Services client objects, one for the IOS+ WSDL and one for the IRESS WSDL
     iosPlusClient = None
     iosPlusClientFactory = None
     try:
-        iosPlusClient = Client(iosPlusWsdl, settings=settings)
-    
+        userCompany = username + "@" + companyname
+
+        iosPlusSession = Session()
+        iosPlusSession.auth = HTTPBasicAuth(userCompany, password)
+        iosPlusClient = Client(iosPlusWsdl, settings=settings, transport=Transport(session=iosPlusSession))
+
         # Check that the service is healthy.
         if iosPlusClient.wsdl.messages == {}:
             logging.error("Accessing Web Services WSDL failed. WSDL URL: {} Error: No supported messages.".format(iosPlusWsdl))

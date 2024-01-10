@@ -1,3 +1,6 @@
+from requests import Session
+from requests.auth import HTTPBasicAuth
+from zeep.transports import Transport
 from zeep import Client, Settings
 from decimal import Decimal
 import sys
@@ -179,15 +182,23 @@ def main(username, companyname, password, iosname, thresholdvalue, percentchange
 
     # Work out IRESS WSDL endpoint details
     iressMethodList = "AlertCreate,AlertGet,AlertDelete"
-    iressWsdl = "{}?un={}&cp={}&pw={}&svc=IRESS&svr={}&mf={}".format(endpoint, username, companyname, password, "", iressMethodList)
+    iressWsdl = "{}?svc=IRESS&svr={}&mf={}".format(endpoint, "", iressMethodList)
 
     # Work out IOS+ WSDL endpoint details
     iosPlusMethodList = "PortfolioGet,PortfolioPositionDetailGet"
-    iosPlusWsdl = "{}?un={}&cp={}&pw={}&svc=IOSPlus&svr={}&mf={}".format(endpoint, username, companyname, password, iosname, iosPlusMethodList)
+    iosPlusWsdl = "{}?svc=IOSPlus&svr={}&mf={}".format(endpoint, iosname, iosPlusMethodList)
 
     # Create the Web Services client objects, one for the IRESS WSDL and one for the IOS+ WSDL
-    iressClient = Client(iressWsdl, settings=settings)
-    iosPlusClient = Client(iosPlusWsdl, settings=settings)    
+
+    userCompany = username + "@" + companyname
+
+    iressSession = Session()
+    iressSession.auth = HTTPBasicAuth(userCompany, password)
+    iressClient = Client(iressWsdl, settings=settings, transport=Transport(session=iressSession))
+
+    iosPlusSession = Session()
+    iosPlusSession.auth = HTTPBasicAuth(userCompany, password)
+    iosPlusClient = Client(iosPlusWsdl, settings=settings, transport=Transport(session=iosPlusSession))
 
     # Obtain the factories for the client objects
     iressClient.set_ns_prefix("ns0", "http://webservices.iress.com.au/v4/")
@@ -197,7 +208,8 @@ def main(username, companyname, password, iosname, thresholdvalue, percentchange
     iosPlusClientFactory = iosPlusClient.type_factory('http://webservices.iress.com.au/v4/')
     
     # Start the IRESS and IOS Service session
-    iressSessionStartResponse = iosPlusClient.service.IRESSSessionStart(iosPlusClientFactory.IRESSSessionStartInput(Header=iosPlusClientFactory.IRESSSessionStartInputHeader(Updates=False), Parameters=iosPlusClientFactory.IRESSSessionStartInputParameters(UserName=username, CompanyName=companyname, Password=password)))
+    appId = str(uuid.uuid4()) # Generate a application ID that is unique.
+    iressSessionStartResponse = iosPlusClient.service.IRESSSessionStart(iosPlusClientFactory.IRESSSessionStartInput(Header=iosPlusClientFactory.IRESSSessionStartInputHeader(Updates=False), Parameters=iosPlusClientFactory.IRESSSessionStartInputParameters(UserName=username, CompanyName=companyname, Password=password, ApplicationID=appId)))
     iressSessionKey = iressSessionStartResponse.Result.DataRows.DataRow[0].IRESSSessionKey
     serviceSessionStartResponse = iosPlusClient.service.ServiceSessionStart(iosPlusClientFactory.ServiceSessionStartInput(Parameters=iosPlusClientFactory.ServiceSessionStartInputParameters(IRESSSessionKey=iressSessionKey, Service= "IOSPLUS", Server=iosname)))
     serviceSessionKey = serviceSessionStartResponse.Result.DataRows.DataRow[0].ServiceSessionKey
